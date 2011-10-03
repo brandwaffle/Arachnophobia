@@ -1,0 +1,14 @@
+{
+  "name": "Arachnophobia",
+  "version": "0.1",
+  "permissions": [
+    "tabs", "http://*/*"
+  ],
+  "content_scripts": [ 
+	{
+  	"js" : ["js/arachnophobia.js"],
+		"matches" : [ "<all_urls>" ],
+		"run_at" : "document_end",
+		"all_frames" : true
+	}]
+}
